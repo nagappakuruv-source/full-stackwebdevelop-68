@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> studentRegistration </title>
+        <style>
+            body {
+                font-family:arial;
+             max-width: 600px;
+             margin:30px auto;
+            }
+            input, select,button {
+                font-family:arial;
+                max-width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+
+            }
+            button {cursor:pointer;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+            
+            }
+            form-group {
+                display: flex;
+                flex-direction: column;
+            }
+
+
+            
+
+        </style>
+    </head>
+    <body>
+        <h1> Student Registration Form </h1>
+        <form><div class="form-group">
+            <label>name</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <br>
+            <label>email</label>
+            <input type="email" name="email" placeholder="Enter your email" required><br>
+            <label>password</label>
+            <input type="password" minlength="6" name="password" placeholder="Enter your password"   required><br>
+            <label>age</label>
+            <input type="number" min="17" max="30" name="age" placeholder="Enter your age" required><br>
+            <label>gender</label>
+            <input type="text" name="gender" placeholder="Enter your gender" required><br>
+            <label>course</label>
+            <select name="course" placeholder="Select a course" required>
+                <option value="">Select a course</option>
+                <option value="computer science">Computer Science</option>
+                <option value="information technology">Information Technology</option>
+                <option value="electronics">Electronics</option>
+                <option value="mechanical">Mechanical</option>
+            </select><br>
+            <label>phone number</label>
+            <input type="number"  name="phone" placeholder="Enter your phone number" required>
+            <button type="submit">Register</button>
+            </div>
+
+
+        </form>
+    </body>
+</html>

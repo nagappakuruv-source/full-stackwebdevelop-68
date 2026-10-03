@@ -1,0 +1,456 @@
+:root {
+
+    --primary-color: #2563eb;
+
+    --secondary-color: #1e293b;
+
+    --background-color: #f1f5f9;
+
+    --white-color: #ffffff;
+
+    --text-color: #333333;
+
+    --spacing: 20px;
+
+}
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: var(--background-color);
+
+    color: var(--text-color);
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+
+    background-color: var(--secondary-color);
+
+    color: var(--white-color);
+
+    padding: var(--spacing);
+
+    /* FLEXBOX */
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+nav a {
+
+    color: var(--white-color);
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+nav a:hover {
+
+    color: #60a5fa;
+
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 40px 20px;
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    /* FLEXBOX */
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+
+    min-height: 350px;
+
+}
+
+
+.hero > div {
+
+    flex: 1;
+
+}
+
+
+.hero h2 {
+
+    font-size: 40px;
+
+    color: var(--secondary-color);
+
+    margin-bottom: 15px;
+
+}
+
+
+.hero p {
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero-box {
+
+    background-color: var(--primary-color);
+
+    color: var(--white-color);
+
+    padding: 80px 20px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+
+    display: inline-block;
+
+    background-color: var(--primary-color);
+
+    color: var(--white-color);
+
+    padding: 12px 20px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+
+    text-align: center;
+
+    margin: 30px 0;
+
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.card-container {
+
+    /* CSS GRID */
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.card {
+
+    background-color: var(--white-color);
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px #cccccc;
+
+}
+
+
+.card h3 {
+
+    color: var(--primary-color);
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: auto;
+
+    margin-bottom: 40px;
+
+}
+
+
+.about h2,
+.contact h2 {
+
+    font-size: 35px;
+
+    color: var(--secondary-color);
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+
+    max-width: 600px;
+
+    margin: auto;
+
+}
+
+
+.contact h2 {
+
+    text-align: center;
+
+}
+
+
+.contact > p {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+form {
+
+    background-color: var(--white-color);
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px #cccccc;
+
+}
+
+
+label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+
+}
+
+
+input,
+textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+}
+
+
+button {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: var(--primary-color);
+
+    color: var(--white-color);
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    opacity: 0.8;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background-color: var(--secondary-color);
+
+    color: var(--white-color);
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+
+    /* Header */
+
+    header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    /* Navigation */
+
+    nav {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 8px;
+
+    }
+
+
+    /* Hero */
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    .hero h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .hero-box {
+
+        width: 100%;
+
+    }
+
+
+    /* Grid */
+
+    .card-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
